@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Nunito', sans-serif;
+	overflow: hidden;
+	font-weight: 400;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+li {
+	list-style: none;
+}
+
+/* Main style */
+main {
+	background-image: url("https://images.unsplash.com/photo-1623314489955-f9e1b4f4a8ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*  Navbar Style*/
+.top-nav {
+	position: relative;
+	background: rgba( 255, 255, 255, 0.25 );
+	backdrop-filter: blur( 4px );
+	-webkit-backdrop-filter: blur( 4px );
+	padding: .5rem 0;
+	z-index: 10;
+} 
+
+.top-nav p {
+	float: left;
+	display: inline-block;
+	margin-left: 4em;
+	padding: .5em;
+	font-size: 1.2rem;
+}
+
+.top-nav .github {
+	float: right;
+	/* margin-right: 4em; */
+	font-size: 1rem;
+	padding: 0.7em 2.5em 0.7em 0;
+}
+
+.top-nav p:hover, .top-nav p:active {
+	border-bottom: 2px solid #fff;
+}
+
+button a:hover, button a:active {
+	color: #333;
+	transition: all .5s ease-in;
+}
+
+button:hover, .button:active {
+	color: #333;
+	background-color: #fff;
+	transition: all .5s ease-in;
+}
+
+/* Header Style */
+.header {
+	color: #fff;
+	height: 90vh;
+}
+.jumbotron {
+	margin: 0 4em;
+	padding: 100px 0;
+	text-align: center;
+}
+ 
+/* Search Box Style */
+.search {
+	margin: 1em auto;
+}
+
+
+.jumbotron h4 a {
+	color: #fff;
+	font-weight: 400;
+}
+
+.jumbotron h4 {
+	font-weight: 400;
+	padding: .8em;
+}
+
+/* Photo Copyright Style */
+.source {
+	position: relative;
+	padding: 1em;
+	margin: 0 auto;
+	width: fit-content;
+	/* height: max-content; */
+	background: rgba( 255, 255, 255, 0.25 );
+	backdrop-filter: blur( 4px );
+	-webkit-backdrop-filter: blur( 4px );
+	border-radius: 5px;
+	border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.photo a{
+	color: #fff;
+}
+
+/* All Hover */
+.jumbotron h4 a:hover, .photo a:hover {
+	border-bottom: 2px solid #fff;
+	transition: all .5s ease;
+}
+
+.bottom-nav ul li a:hover, .copy a:hover {
+	color:#ddd;
+	transition: all .3s ease;
+}
+
+/* footer */
+.footer {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	height: 10vh;
+	padding: .5rem;
+	color: #fff;
+	font-size: .9rem;
+	z-index: 10;
+}
+
+.footer p {
+	color: #fff;
+	font-size: .9rem;
+}
+
+.bottom-nav {
+	flex: 4;
+	order: 1;
+	margin-left: 3em;
+	font-weight: bold;
+}
+
+.copy {
+	flex: 1;
+	order: 2;
+	padding: 1rem;
+	margin-right: 3em;
+	background: #fff;
+	color: #333;
+	border-radius: 7px;
+	line-height: 16px;
+	text-align: center;
+}
+
+.copy a, .copy p {
+	color: #333;
+}
+
+/* Footer Menu  */
+	
+.bottom-nav ul {
+	position: relative;
+	display: inline-flex;
+	width: 100%;
+	float: left;
+}
+
+.bottom-nav ul li a{
+	display: block;
+	padding: 15px;
+	color: #fff;
+	font-weight: bold;
+}
+
+/* Responsive Breakpoint */
+
+@media screen and (max-width: 512px) {
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	main {
+		height: 100vh;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.top-nav {
+		width: 100%;
+		background: transparent;
+		padding: .5em;
+		margin: 0;
+		font-size: 1rem;
+	}  
+	
+	.top-nav p {
+		float: left;
+		margin-left: .3em;
+		font-size: 1.1rem;
+	}
+	
+	.top-nav .github {
+		float: right;
+		margin-left: 0.5em;
+	} 
+	
+	.header {
+		height: 85vh;
+		padding: 1rem;
+	}
+
+	.jumbotron {
+		margin: auto;
+	}
+	.search {
+		margin: 1em 0;
+	}
+
+	.photo {
+		width: fit-content;
+		font-size: .86rem;
+	}
+
+	.footer {
+		margin: 0;
+		padding: 0;
+		height: 15vh;
+		font-size: .75rem;
+		display: flex;
+		flex-direction: column;
+		background: #333;
+		color: #fff;
+	}
+
+	.nav {
+		flex: 1;
+		order: 1;
+		margin: 0 auto;
+		padding: .5em;
+		text-align: center;
+		color: #fff;
+		
+	}
+
+	.copy {
+		padding-top: 5px;
+		flex: 1;
+		order: 2;
+		margin: 0 auto;
+		text-align: center;
+		color: #fff;
+		background: none;
+	}
+
+	.copy p, .copy p a {
+		color: #fff;
+	}
+}

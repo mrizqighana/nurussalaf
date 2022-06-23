@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Quicksand', sans-serif;
+	color: #fff;
+	font-weight: bold;
+	overflow: scroll;
+}
+
+a {
+	text-decoration: none;
+	font-weight: bolder;
+}
+
+/* Header Style */
+.header {
+	background: lightgray url(img/pexels-mohamad-2406731.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 95vh;
+}
+
+
+/*  Navbar Style*/
+.nav {
+	text-align: center;
+	padding: 1rem 0;
+	color: #fff;
+
+}
+
+/* Hover */
+.nav a:hover, .nav a:active {
+	text-decoration: underline;
+	color: #333;
+	transition: all .3s ease;
+}
+
+/* footer */
+.footer {
+	max-height: 10vh;
+	padding: .5rem;
+	background-color: #333;
+	flex-direction: row;
+	font-size: .9rem;
+}
+
+.copy a:hover {
+	text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+	/* Responsive Breakpoint */
+	* {
+		font-size: .8rem;
+		overflow: auto;
+	}
+
+	.header {
+		height: 95vh;
+	}
+
+	.bug-report {
+		display: none;
+	}
+
+	.footer {
+		height: 5vh;
+	}
+
+	
+}

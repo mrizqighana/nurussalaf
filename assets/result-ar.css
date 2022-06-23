@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;800&display=swap');
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Cairo', sans-serif;
+	/* overflow: hidden; */
+	font-weight: bold;
+}
+
+a {
+	text-decoration: none;
+	color: #333;
+}
+
+li {
+	list-style: none;
+}
+
+/* header style */
+header {
+    margin: 1em;
+    padding: 1.5em 0;
+    display: flex;
+    flex-direction: row;
+    /* border-bottom: 2px solid #333; */
+}
+
+header a {
+    flex: 1;
+    order: 1;
+    font-size: 1.2rem;
+}
+
+header .search {
+    flex: 4;
+    order: 2;
+}
+
+/* main style */
+main {
+    padding: 0 4em;
+}
+
+/* footer style */
+/* footer */
+.footer {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	height: 10vh;
+	padding: .5rem;
+	background-color: #ddd;
+	color: rgb(77, 76, 76);
+	font-size: .9rem;
+	z-index: 10;
+}
+
+.footer p {
+	color: rgb(77, 76, 76);
+	font-weight: 500;
+	font-size: .9rem;
+}
+
+.nav {
+	flex: 4;
+	order: 1;
+	margin-left: 3em;
+}
+
+.copy {
+	flex: 1;
+	order: 2;
+	padding: 1rem;
+	margin-right: 3em;
+}
+
+.copy a {
+	color: rgb(77, 76, 76);
+}
+
+/* Footer Menu  */
+	
+nav ul {
+	position: relative;
+	display: inline-flex;
+	width: 100%;
+	float: left;
+}
+
+nav ul li a{
+	display: block;
+	padding: 15px;
+	color: rgb(77, 76, 76);
+}
+
+nav ul li a:hover, .copy a:hover {
+	text-decoration: underline;
+}
+
+/* Responsive Breakpoint */
+@media screen and(max-width: 512px) {
+    /* header style */
+    header {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header a {
+        flex: 1;
+        order: 1;
+        font-size: 1.2rem;
+        margin-bottom: .9em;
+    }
+
+    header .search {
+        flex: 4;
+        order: 2;
+    }
+
+    /* main style */
+    main {
+        padding: 0 .3em;
+    }
+
+    .footer {
+        margin: 0;
+        padding: 0;
+        height: 15vh;
+        font-size: .75rem;
+        display: flex;
+        flex-direction: column;
+        /* text-align: center; */
+    }
+
+    .nav {
+        flex: 1;
+        order: 1;
+        margin: 0 auto;
+        padding: .5em;
+        text-align: center;
+    }
+
+    .nav::after {
+        border-bottom: 2px solid rgb(77, 76, 76);
+    }
+
+    .copy {
+        padding-top: 5px;
+        flex: 1;
+        order: 2;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
